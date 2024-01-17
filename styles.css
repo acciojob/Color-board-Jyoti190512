@@ -1,1 +1,27 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(20, 40px);
+    grid-template-rows: repeat(40, 40px);
+    gap: 2px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    transition: background-color 1s ease;
+}
+
+.square:hover {
+    background-color: #3498db;
+}
+
